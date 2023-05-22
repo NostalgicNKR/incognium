@@ -1,13 +1,12 @@
 <?php
 $dbName = "url";
-$dbUser = "links";
+$dbUser = "root";
 $dbPassword = "";
 $host = "localhost";
 
-$con = mysqli_connect($host, $dbUser, $dbPassword, $dbName) {
-    if(mysqli_connect_errno()){
-        die("Connection Failed". mysqli_connect_error());
-    }
-}
+	$con = mysqli_connect($host, $dbUser, $dbPassword, $dbName);  
+    if(mysqli_connect_errno()) {  
+        die("Failed to connect with MySQL: ". mysqli_connect_error());  
+    }  
 
 ?>
