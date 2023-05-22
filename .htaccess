@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^s/(.*)$ /redirect.php?alias=$1 [L]
